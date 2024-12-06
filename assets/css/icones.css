@@ -1,0 +1,21 @@
+.logo-lg img, .logo-sm img {
+    transform: scale(1.9); /* Aumenta o tamanho em 60% */
+}
+
+.bg-custom-red {
+    background-color: #ed4030;
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-outline-danger {
+    color: #ed4030;
+    border-color: #ed4030;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Login INOVA RASTREIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+
+     <!-- App favicon -->
+     <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+<!-- Fullcalendar css -->
+<link href="assets/css/loginmodal.css" rel="stylesheet" type="text/css" />
+
+     <!-- Theme Config Js -->
+     <script src="assets/js/hyper-config.js"></script>
+
+     <!-- App css -->
+     <link href="assets/css/app-saas.min.css" rel="stylesheet" type="text/css" id="app-style" />
+
+     <!-- Icons css -->
+     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+     <link href="assets/css/icones.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="authentication-bg pb-0">
+
+    <div class="auth-fluid">
+        <!--Auth fluid left content -->
+        <div class="auth-fluid-form-box">
+            <div class="card-body d-flex flex-column h-100 gap-3">
+                
+
+                <!-- Logo -->
+                <div class="auth-brand text-center text-lg-start">
+                    <br>
+                    <br>
+                    <a href="index.html" class="logo-dark">
+                        <span><img src="assets/images/rastreiologo.png" alt="dark logo" height="66"></span>
+                    </a>
+                    <a href="index.html" class="logo-light">
+                        <span><img src="assets/images/rastreiologo.png" alt="logo" height="22"></span>
+                    </a>
+                </div>
+
+                <div class="my-auto">
+                    <!-- title-->
+                    <h4 class="mt-0">Login</h4>
+                    <p class="text-muted mb-4">Adicione o seu e-mail e sua senha para acessar!</p>
+                
+                    <!-- form -->
+                    <form action="#">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input class="form-control" type="email" id="email" required="" placeholder="Digite o seu e-mail!">
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="text-muted float-end" onclick="openPasswordRecoveryModal()"><small>Esqueceu sua senha?</small></a>
+                            <label for="senha" class="form-label">Senha</label>
+                            <input class="form-control" type="password" required="" id="senha" placeholder="Digite a sua senha">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="checkbox-signin">
+                                <label class="form-check-label" for="checkbox-signin">Lembrar-me</label>
+                            </div>
+                        </div>
+                        <div class="d-grid mb-0 text-center">
+                            <a href="mapa.html" class="btn btn-success"><i class="mdi mdi-login"></i> Autenticar </a>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Modal de Recuperação de Senha -->
+                <div id="passwordRecoveryModal" class="custom-modal" style="display: none;">
+                    <div class="custom-modal-content">
+                        <span class="custom-close" onclick="closePasswordRecoveryModal()">&times;</span>
+                        <h2 style="color: white;">Recuperação de Senha</h2>
+                
+                        <!-- Formulário de Recuperação de Senha -->
+                        <form>
+                            <div class="mb-3">
+                                <br>
+                                <label for="recoveryEmail" style="color: white;">Digite seu e-mail cadastrado:</label>
+                                <input type="email" id="recoveryEmail" name="recoveryEmail" class="form-control" required placeholder="Seu e-mail">
+                            </div>
+                            <button type="submit" class="btn btn-light w-100" style="background-color: #ffffff; color: #242525; margin-top: 15px;">
+                                Enviar Link de Recuperação
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <footer class="footer footer-alt">
+                    <p class="text-muted">Não tem conta? 
+                        <a href="#" class="text-muted ms-1" onclick="openModal()">
+                            <b>Cadastre-se aqui</b>
+                        </a>
+                    </p>
+                </footer>
+                
+                <!-- Modal de Registro Personalizado -->
+                <div id="registerModal" class="custom-modal" style="display: none;">
+                    <div class="custom-modal-content">
+                        <span class="custom-close" onclick="closeModal()">&times;</span>
+                        <h2 style="color: white;">Registrar-se</h2>
+                
+                        <!-- Formulário de Registro -->
+                        <form>
+                            <div id="nameFields">
+                                <div class="mb-3">
+                                    <label for="firstName" style="color: white;">Nome:</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-control" required>
+                                </div>
+                
+                                <div class="mb-3">
+                                    <label for="lastName" style="color: white;">Sobrenome:</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-control" required>
+                                </div>
+                            </div>
+                
+                            <div id="cpfFields" style="display: none;">
+                                <div class="mb-3">
+                                    <label for="cpf" style="color: white;">CPF:</label>
+                                    <input type="text" id="cpf" name="cpf" class="form-control">
+                                </div>
+                            </div>
+                
+                            <div class="form-check mb-3">
+                                <input type="radio" name="type" value="cnpj" id="cnpjOption" onclick="toggleFields()" class="form-check-input">
+                                <label for="cnpjOption" style="color: white;" class="form-check-label">CNPJ</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input type="radio" name="type" value="cpf" id="cpfOption" onclick="toggleFields()" class="form-check-input">
+                                <label for="cpfOption" style="color: white;" class="form-check-label">CPF</label>
+                            </div>
+                
+                            <div id="cnpjFields" style="display: none;">
+                                <div class="mb-3">
+                                    <label for="companyName" style="color: white;">Nome da Empresa:</label>
+                                    <input type="text" id="companyName" name="companyName" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cnpj" style="color: white;">CNPJ:</label>
+                                    <input type="text" id="cnpj" name="cnpj" class="form-control">
+                                </div>
+                            </div>
+                
+                            <button type="submit" class="btn btn-light w-100" style="background-color: #ffffff; color: #242525; margin-top: 15px;">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+                
+                
+                
+                
+
+            </div> <!-- end .card-body -->
+        </div>
+        <!-- end auth-fluid-form-box-->
+
+        <!-- Auth fluid right content -->
+        <div class="auth-fluid-right text-center">
+            <div class="auth-user-testimonial">
+                <h2 class="mb-3">Gestão de frotas e veículos com rastreamento veicular</h2>
+                <p class="lead"><i class="mdi mdi-format-quote-open"></i> Somos sinônimo de Segurança <i class="mdi mdi-format-quote-close"></i>
+                </p>
+                <p>
+                    - INOVA RASTREIO
+                </p>
+            </div> <!-- end auth-user-testimonial-->
+        </div>
+        <!-- end Auth fluid right content -->
+    </div>
+    <!-- end auth-fluid-->
+    <!-- Vendor js -->
+
+    
+    <script src="assets/js/login.js" ></script>
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.custom-modal-content {
+    background-color: #242525;
+    color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+}
+.custom-close {
+    color: white;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.custom-modal-content input.form-control {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.custom-modal-content {
+    background-color: #242525;
+    color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+}
+.custom-close {
+    color: white;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.custom-modal-content input.form-control {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.map-controls {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #343a40; /* Cor de fundo dos botões */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.map-btn:hover {
+    background-color: #495057; /* Cor ao passar o mouse */
+}
+
+.map-btn i {
+    font-size: 20px;
+}
