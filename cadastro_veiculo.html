@@ -176,89 +176,308 @@
                     </div>
 
                      <!--- Sidemenu -->
-                     <ul class="side-nav">
+                           <ul class="side-nav">
 
-                        <li class="side-nav-title"><h4>Administração</h4></li>
+                    <li class="side-nav-title"><h4>Administração</h4></li>
 
 
-                        <li class="side-nav-item">
-                            <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
-                                <i class="uil-outgoing-call"></i>
-                                <span> Agendamento </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarEmail">
-                                <ul class="side-nav-second-level">
-                                    <li>
-                                        <a href="apps-email-inbox.html">Rotas</a>
-                                    </li>
-                                    <li>
-                                        <a href="apps-email-read.html">Tipo de serviço</a>
-                                    </li>
-                                    <li>
-                                        <a href="apps-email-read.html">Passageiro</a>
-                                    </li>
-                                    <li>
-                                        <a href="apps-email-read.html">Observações</a>
-                                    </li>
-                                    <li>
-                                        <a href="apps-email-read.html">Calendário</a>
-                                    </li>
-                                   
-                                </ul>
-                            </div>
-                        </li>
-                        </li>
+                   
+                    </li>
 
-                        <li class="side-nav-item">
-                            <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
-                                <i class="uil-outgoing-call"></i>
-                                <span> Administrativo </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarEmail">
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#cadastro" aria-expanded="false" aria-controls="cadastro" class="side-nav-link">
+                            <i class="ri-install-fill"></i>
+                            <span> Cadastro </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="cadastro">
                             <ul class="side-nav-second-level">
                                 <li>
-                                    <a href="cadastro_carro.html">Carros</a>
+                                    <a href="cadastro_veiculo.html">Veiculos</a>
                                 </li>
                                 <li>
-                                    <a href="cadastro_cliente.html">Clientes</a>
+                                    <a href="cadastro_grupos_veiculos.html">Grupos de Veículos</a>
                                 </li>
                                 <li>
-                                    <a href="cadastro_motorista.html">Motoristas</a>
+                                    <a href="cadastro_pontos_de_interesse_poi.html">Pontos de Interesse (POI)</a>
                                 </li>
-                                <li>
-                                    <a href="produtos.html">Produtos</a>
-                                </li>
-                               <li>
-                                    <a href="financeiro.html">Financeiro</a>
-                                </li>
+
+                                
+                                    <li>
+                                        <a href="cadastro_grupo_de_poi.html" >Grupos de POI</a>
+                                    </li>
+                                    <li>
+                                        <a href="cadastro_motorista.html" >Cerca Virtual</a>
+                                    </li>
+                                    <li>
+                                        <a href="cadastro_motorista.html" >Grupo de Cerca</a>
+                                    </li>
+                                    <li>
+                                        <a href="cadastro_motorista.html" >Tipos de Penalidades</a>
+                                    </li>
+                                    <li>
+                                        <a href="cadastro_cliente.html" >Cadastro de Cliente CPF</a>
+                                    </li>
+                                    <li>
+                                        <a href="cadastro_empresa.html" >Cadastro de Empresa CNPJ</a>
+                                    </li>
+                                
+                                
+                                <script>
+                                    function showDevelopmentMessage(event) {
+                                        event.preventDefault(); // Impede o redirecionamento
+                                        alert("Esta opção está em desenvolvimento.");
+                                    }
+                                </script>
+
+                                
+                               
                                
                             </ul>
                         </div>
                     </li>
-                        </li>
-                        </li>
 
-                        
+                    <li class="side-nav-item">
+                        <a href="mapa.html" class="side-nav-link">
+                            <i class="ri-map-pin-fill"></i>
+                            <span> Mapa </span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a href="historicodetrajeto.html" class="side-nav-link">
+                            <i class="ri-map-pin-user-fill"></i>
+                            <span> Histórico de Trajeto </span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a href="bloqueio.html" class="side-nav-link">
+                            <i class="ri-file-lock-fill"></i>
+                            <span> Bloqueio Veicular </span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#definicao" aria-expanded="false" aria-controls="definicao" class="side-nav-link">
+                            <i class="ri-pin-distance-fill"></i>
+                            <span> Defini. de Rastreio </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="definicao">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="cadastro_carro.html">(Veículo Ligado)</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_cliente.html">(Veículo Desligado)</a>
+                                </li>
+                               
+                               
+                               
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#frotas" aria-expanded="false" aria-controls="frotas" class="side-nav-link">
+                            <i class="ri-remote-control-fill"></i>
+                            <span> Gestão de Frotas </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="frotas">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="cadastro_carro.html">Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_cliente.html">Notificações</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_motorista.html">Comandos Automáticos</a>
+                                </li>
+                               
+                               
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#telemetria" aria-expanded="false" aria-controls="telemetria" class="side-nav-link">
+                            <i class="ri-phone-find-line"></i>
+                            <span> Telemetria </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="telemetria">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="cadastro_carro.html">Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_cliente.html">Notificações</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_motorista.html">Comandos Automáticos</a>
+                                </li>
+                               
+                               
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#equipamentos" aria-expanded="false" aria-controls="equipamentos" class="side-nav-link">
+                            <i class="ri-router-fill"></i>
+                            <span> Equip. de Rastreio </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="equipamentos">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="cadastro_carro.html">Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_cliente.html">Notificações</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_motorista.html">Comandos Automáticos</a>
+                                </li>
+                               
+                               
+                            </ul>
+                        </div>
+                    </li>
+
+                 
+
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
+                            <i class="ri-numbers-line"></i>
+                            <span> Gestão de Despesas </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="sidebarEmail">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="cadastro_carro.html">Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_cliente.html">Notificações</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_motorista.html">Comandos Automáticos</a>
+                                </li>
+                               
+                               
+                            </ul>
+                        </div>
+                    </li>
+
+                   
+                    </li>
+
+                    
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#telemetria" aria-expanded="false" aria-controls="telemetria" class="side-nav-link">
+                            <i class="ri-file-search-line"></i>
+                            <span> Análise de Dados </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="telemetria">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="cadastro_carro.html">Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_cliente.html">Notificações</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_motorista.html">Comandos Automáticos</a>
+                                </li>
+                               
+                               
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#telemetria" aria-expanded="false" aria-controls="telemetria" class="side-nav-link">
+                            <i class="ri-settings-4-fill"></i>
+                            <span> Comandos </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="telemetria">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="cadastro_carro.html">Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_cliente.html">Notificações</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_motorista.html">Comandos Automáticos</a>
+                                </li>
+                               
+                               
+                            </ul>
+                        </div>
+                    </li>
 
 
-                      
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#telemetria" aria-expanded="false" aria-controls="telemetria" class="side-nav-link">
+                            <i class=" ri-shield-user-line"></i>
+                            <span> Controle do Motorista </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="telemetria">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="cadastro_carro.html">Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_cliente.html">Notificações</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_motorista.html">Comandos Automáticos</a>
+                                </li>
+                               
+                               
+                            </ul>
+                        </div>
+                    </li>
 
-                        <li class="side-nav-title">Ajuda</li>
+                  
 
-                       
-                        </li>
-   <li class="side-nav-item">
-                            <a href="https://atendimento.fiema.org.br/" class="side-nav-link">
-                                <i class="uil-layer-group"></i>
-                                <span> <span>
-                                
-                            </a>
-                        </li>
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#telemetria" aria-expanded="false" aria-controls="telemetria" class="side-nav-link">
+                            <i class="ri-checkbox-line"></i>
+                            <span> Checklist </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="telemetria">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="cadastro_carro.html">Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_cliente.html">Notificações</a>
+                                </li>
+                                <li>
+                                    <a href="cadastro_motorista.html">Comandos Automáticos</a>
+                                </li>
+                               
+                               
+                            </ul>
+                        </div>
+                    </li>
+
+                   
+
+                  
 
 
-                    </ul>
+                </ul>
                     <!--- End Sidemenu -->
 
                     <div class="clearfix"></div>
@@ -283,10 +502,7 @@
                             <div class="col-12">
                                 <div class="page-title-box">
                                     <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                             <li class="breadcrumb-item"><a href="calendario_adm.html">Voltar para home</a></li>
-                                          
-                                        </ol>
+                                        
                                     </div>
                                     <h4 class="page-title">Cadastro de Carros</h4>
                                 </div>
@@ -336,9 +552,7 @@
                                                         <label for="log-creation">Data Criação</label>
                                                     </div>
                                                 </div>
-                                                
                                             </div>
-                        
                         
                                             <hr class="my-4">
                         
@@ -361,12 +575,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                        
                                             <script>
                                                 function toggleOdometerField() {
                                                     const odometerControl = document.getElementById('odometer-control');
                                                     const odometerKmContainer = document.getElementById('odometer-km-container');
-
+                        
                                                     if (odometerControl.value === 'manual') {
                                                         odometerKmContainer.style.display = 'block'; // Exibe o campo
                                                     } else {
@@ -374,7 +588,87 @@
                                                     }
                                                 }
                                             </script>
-
+                        
+                                            <hr class="my-4">
+                        
+                                            <!-- Atribuir Pessoa ou Empresa -->
+                                            <h5 class="mb-3 text-secondary"><i class="bi bi-people me-2"></i>Atribuir a Pessoa ou Empresa</h5>
+                                            <div class="row g-4">
+                                                <div class="col-lg-12">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="assign-to" placeholder="Selecione CPF ou CNPJ" readonly onclick="togglePersonList()">
+                                                        <label for="assign-to">Selecione CPF ou CNPJ</label>
+                                                    </div>
+                                                    <div id="person-list" class="mt-2 d-none border p-3 rounded bg-light">
+                                                        <label><input type="checkbox" value="123.456.789-00"> CPF: 123.456.789-00 - João Silva</label><br>
+                                                        <label><input type="checkbox" value="987.654.321-00"> CPF: 987.654.321-00 - Maria Souza</label><br>
+                                                        <label><input type="checkbox" value="12.345.678/0001-99"> CNPJ: 12.345.678/0001-99 - Empresa Alpha</label><br>
+                                                        <label><input type="checkbox" value="98.765.432/0001-88"> CNPJ: 98.765.432/0001-88 - Empresa Beta</label><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <script>
+                                                function togglePersonList() {
+                                                    const personList = document.getElementById('person-list');
+                                                    personList.classList.toggle('d-none'); // Alterna a exibição da lista
+                                                }
+                        
+                                                // Oculta a lista quando clicar fora
+                                                document.addEventListener('click', function (event) {
+                                                    const assignField = document.getElementById('assign-to');
+                                                    const personList = document.getElementById('person-list');
+                                                    if (!assignField.contains(event.target) && !personList.contains(event.target)) {
+                                                        personList.classList.add('d-none');
+                                                    }
+                                                });
+                                            </script>
+                        
+                                            <hr class="my-4">
+                        
+                                            <!-- Informações do Equipamento -->
+                                            <h5 class="mb-3 text-secondary"><i class="bi bi-gear me-2"></i>Informações do Equipamento</h5>
+                                            <div class="accordion" id="equipment-info">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                            Clique para exibir informações do equipamento
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#equipment-info">
+                                                        <div class="accordion-body">
+                                                            <div class="row g-3">
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-floating">
+                                                                        <input type="text" class="form-control" id="imei" placeholder="IMEI">
+                                                                        <label for="imei">IMEI</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-floating">
+                                                                        <input type="text" class="form-control" id="iccid" placeholder="ICCID">
+                                                                        <label for="iccid">ICCID</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-floating">
+                                                                        <input type="text" class="form-control" id="chip-number" placeholder="Número do Chip">
+                                                                        <label for="chip-number">Número do Chip</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-floating">
+                                                                        <input type="text" class="form-control" id="apn" placeholder="APN">
+                                                                        <label for="apn">APN</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <hr class="my-4">
                         
                                             <!-- Botões -->
                                             <div class="d-flex justify-content-end mt-4">

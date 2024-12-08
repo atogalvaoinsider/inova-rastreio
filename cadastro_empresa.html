@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>Financeiro</title>
+        <title>Cadastro de Empresa</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -202,21 +202,33 @@
                                     <a href="cadastro_pontos_de_interesse_poi.html">Pontos de Interesse (POI)</a>
                                 </li>
 
-                                <li>
-                                    <a href="cadastro_grupo_de_poi.html">Grupos de POI</a>
-                                </li>
                                 
-                                <li>
-                                    <a href="cadastro_motorista.html">Cerca Virtual</a>
-                                </li>
-
-                                <li>
-                                    <a href="cadastro_motorista.html">Grupo de Cerca</a>
-                                </li>
-
-                                <li>
-                                    <a href="cadastro_motorista.html">Tipos de Penalidades</a>
-                                </li>
+                                    <li>
+                                        <a href="cadastro_grupo_de_poi.html" >Grupos de POI</a>
+                                    </li>
+                                    <li>
+                                        <a href="cadastro_motorista.html" >Cerca Virtual</a>
+                                    </li>
+                                    <li>
+                                        <a href="cadastro_motorista.html" >Grupo de Cerca</a>
+                                    </li>
+                                    <li>
+                                        <a href="cadastro_motorista.html" >Tipos de Penalidades</a>
+                                    </li>
+                                    <li>
+                                        <a href="cadastro_cliente.html" >Cadastro de Cliente CPF</a>
+                                    </li>
+                                    <li>
+                                        <a href="cadastro_empresa.html" >Cadastro de Empresa CNPJ</a>
+                                    </li>
+                                
+                                
+                                <script>
+                                    function showDevelopmentMessage(event) {
+                                        event.preventDefault(); // Impede o redirecionamento
+                                        alert("Esta opção está em desenvolvimento.");
+                                    }
+                                </script>
 
                                 
                                
@@ -485,371 +497,170 @@
                     <div class="container-fluid">
 
                         <!-- start page title -->
-                        <div class="row">
+                        <div class="table-responsive">
+                            <table class="table table-centered table-borderless table-hover w-100 dt-responsive nowrap" id="products-datatable"></table>
                             <div class="col-12">
                                 <div class="page-title-box">
-                                    
-                                    <h4 class="page-title">Financeiro Inova Transportes - Setembro</h4>
+                                    <div class="page-title-right">
+                                        
+                                    </div>
+                                    <h4 class="page-title">Cadastro de Empresa</h4>
                                 </div>
                             </div>
                         </div>
                         <!-- end page title -->
 
                         <div class="row">
-                            <div class="col-xxl-9">
-                                <div class="row">
-                                    <div class="col-sm-6 col-xl-3 mb-3">
-                                        <div class="card mb-0 h-100">
-                                            <div class="card-body">
-                                                <div class="dropdown float-end">
-                                                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="mdi mdi-dots-horizontal"></i>
-                                                    </a>
-                                                     <div class="dropdown-menu dropdown-menu-end">
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-plus-circle me-1"></i> Adicionar Serviço</a>
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-content-copy me-1"></i> Duplicar Serviço</a>
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-square-edit-outline me-1"></i> Editar</a>
-                                                        <!-- item-->
-                                                        <hr class="dropdown-divider">
-                                                        <a href="javascript:void(0);" class="dropdown-item text-danger"><i class="mdi mdi-trash-can-outline me-1"></i> Detelar</a>
-                                                    </div>
-                                                </div>
-                                                <h4 class="header-title">Transfer</h4>
-                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Campaign Sent">Serviço para ENEVA </h5>
-        
-                                                <div class="d-flex align-items-center mt-4">
-                                                    <div class="flex-shrink-0">
-                                                        <h5 class="font-13 text-muted my-0"><i class="mdi mdi-clock-outline"></i> 4 horas atrás</h5>
-                                                    </div>
-                                                    <div class="flex-grow-1 ms-2"></div>
-                                                    <div class="text-end multi-user">
-                                                        <a href="javascript:void(0);" class="d-inline-block">
-                                                            <img src="assets/images/users/avatar-1.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="d-inline-block">
-                                                            <img src="assets/images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                        </a>
-                                                    </div>
-                                                  </div>
-                                            </div> <!-- end card-body -->
-                                        </div> <!-- end card -->
-                                    </div> <!-- end col -->
-
-                                    <div class="col-sm-6 col-xl-3 mb-3">
-                                        <div class="card mb-0 h-100">
-                                            <div class="card-body">
-                                                <div class="dropdown float-end">
-                                                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="mdi mdi-dots-horizontal"></i>
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-end">
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-plus-circle me-1"></i> Adicionar Serviço</a>
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-content-copy me-1"></i> Duplicar Serviço</a>
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-square-edit-outline me-1"></i> Editar</a>
-                                                        <!-- item-->
-                                                        <hr class="dropdown-divider">
-                                                        <a href="javascript:void(0);" class="dropdown-item text-danger"><i class="mdi mdi-trash-can-outline me-1"></i> Detelar</a>
-                                                    </div>
-                                                </div>
-                                                <h4 class="header-title">City Tour</h4>
-                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Campaign Sent">Familia Senna</h5>
-        
-                                                <div class="d-flex align-items-center mt-4">
-                                                    <div class="flex-shrink-0">
-                                                        <h5 class="font-13 text-muted my-0"><i class="mdi mdi-clock-outline"></i> 2 horas atrás</h5>
-                                                    </div>
-                                                    <div class="flex-grow-1 ms-2"></div>
-                                                    <div class="text-end multi-user">
-                                                        <a href="javascript:void(0);" class="d-inline-block">
-                                                            <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="d-inline-block">
-                                                            <img src="assets/images/users/avatar-5.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                        </a>
-                                                    </div>
-                                                  </div>
-                                            </div> <!-- end card-body -->
-                                        </div> <!-- end card -->
-                                    </div> <!-- end col -->
-
-                                    <div class="col-sm-6 col-xl-3 mb-3">
-                                        <div class="card mb-0 h-100">
-                                            <div class="card-body">
-                                                <div class="dropdown float-end">
-                                                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="mdi mdi-dots-horizontal"></i>
-                                                    </a>
-                                                     <div class="dropdown-menu dropdown-menu-end">
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-plus-circle me-1"></i> Adicionar Serviço</a>
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-content-copy me-1"></i> Duplicar Serviço</a>
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-square-edit-outline me-1"></i> Editar</a>
-                                                        <!-- item-->
-                                                        <hr class="dropdown-divider">
-                                                        <a href="javascript:void(0);" class="dropdown-item text-danger"><i class="mdi mdi-trash-can-outline me-1"></i> Detelar</a>
-                                                    </div>
-                                                </div>
-                                                <h4 class="header-title">Show Zé Vaqueiro</h4>
-                                                <h5 class="text-muted fw-normal mt-0 text-truncate" title="Campaign Sent">Show com van</h5>
-        
-                                                <div class="d-flex align-items-center mt-4">
-                                                    <div class="flex-shrink-0">
-                                                        <h5 class="font-13 text-muted my-0"><i class="mdi mdi-clock-outline"></i> 1 dia atrás</h5>
-                                                    </div>
-                                                    <div class="flex-grow-1 ms-2"></div>
-                                                    <div class="text-end multi-user">
-                                                        <a href="javascript:void(0);" class="d-inline-block">
-                                                            <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                        </a>
-                                                        <a href="javascript:void(0);" class="d-inline-block">
-                                                            <img src="assets/images/users/avatar-7.jpg" class="rounded-circle avatar-xs" alt="friend">
-                                                        </a>
-                                                    </div>
-                                                  </div>
-                                            </div> <!-- end card-body -->
-                                        </div> <!-- end card -->
-                                    </div> <!-- end col -->
-
-                                    <div class="col-sm-6 col-xl-3 mb-3">
-                                        <div class="card mb-0 h-100">
-                                            <div class="card-body">
-                                                <div class="border-dashed border-2 border h-100 w-100 rounded d-flex align-items-center justify-content-center">
-                                                    <a href="javascript:void(0);" class="text-center text-muted p-2" data-bs-toggle="modal" data-bs-target="#CreateProject">
-                                                        <i class="mdi mdi-plus h3 my-0"></i> <h4 class="font-16 mt-1 mb-0 d-block">Adicionar Novo Projeto</h4>
-                                                    </a>
-                                                </div>
-                                            </div> <!-- end card-body -->
-                                        </div> <!-- end card -->
-                                    </div> <!-- end col -->
-                                </div> <!-- end row -->
-
-                                <div class="row">
-                                    <div class="col-xl-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4 class="header-title">Balanço mensal</h4>
-
-                                                <div id="monthly-target" class="apex-charts mb-4 mt-4" data-colors="#0acf97,#727cf5"></div>
-
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="text-center">
-                                                            
-                                                            <p class="fw-semibold text-muted mb-0">
-                                                                <i class="mdi mdi-circle text-primary"></i> A receber
-                                                                
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="text-center">
-                                                          
-                                                            <p class="fw-semibold text-muted mb-0">
-                                                                <i class="mdi mdi-circle text-success"></i> Recebidos
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="col-12">
+                                <div class="card shadow-lg border-0">
+                                    <div class="card-header bg-custom-red text-white text-center">
+                                        <h5 class="card-title mb-0">Cadastro de Empresa</h5>
                                     </div>
-                                    <div class="col-xl-8">
-                                        <div class="card">
-                                            <div class="card-header d-flex justify-content-between align-items-center">
-                                                <h4 class="header-title">Histórico Financeiro - Mensal</h4>
-                                                <div>
-                                                    <button type="button" class="btn btn-soft-primary btn-sm">
-                                                        Todos
-                                                    </button>
-                                                    <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                        6 Meses
-                                                    </button>
-                                                    <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                        1 Ano
-                                                    </button>
+                                    <div class="card-body p-4">
+                                        <form>
+                                            <!-- Informações principais -->
+                                            <h5 class="mb-3 text-secondary"><i class="bi bi-building me-2"></i>Informações da Empresa</h5>
+                                            <div class="row g-4">
+                                                <div class="col-lg-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="company-name" placeholder="Nome da Empresa" required>
+                                                        <label for="company-name">Nome da Empresa</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="company-address" placeholder="Endereço" required>
+                                                        <label for="company-address">Endereço</label>
+                                                    </div>
                                                 </div>
                                             </div>
-
-                                                <!-- Mudar cor do gráfico - historico financeiro  -->
-                                            <div class="card-body pt-0">
-                                                <div dir="ltr" class="mt-2">
-                                                    <div id="crm-project-statistics" class="apex-charts" data-colors=""></div>
+                        
+                                            <div class="row g-4 mt-3">
+                                                <div class="col-lg-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="company-razao-social" placeholder="Razão Social">
+                                                        <label for="company-razao-social">Razão Social</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="company-cnpj" placeholder="CNPJ" maxlength="18" oninput="applyCnpjMask(this)" required>
+                                                        <label for="company-cnpj">CNPJ</label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                        
+                                            <hr class="my-4">
+                        
+                                            <!-- Botões -->
+                                            <div class="d-flex justify-content-end mt-4">
+                                                <button type="button" class="btn btn-outline-danger me-2">Cancelar</button>
+                                                <button type="submit" class="btn btn-success">Salvar</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xxl-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <h4 class="fw-semibold mt-0 mb-3">
-                                                Meta Mensal Financeira
-                                                <span class="badge bg-success-lighten text-success fw ms-sm-1">
-                                                    <i class="mdi mdi-trending-up me-1"></i>89%
-                                                </span>
-                                            </h4>
-                                            <div class="dropdown">
-                                                <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="mdi mdi-dots-vertical"></i>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <!-- item-->
-                                                    <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#editMetaModal">Editar meta</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                
-                                        <h5 class="float-end mt-0">65%</h5>
-                                        <h5 class="fw-normal mt-0 mb-2">Valor a receber</h5>
-                                        <div class="progress" style="height: 4px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header d-flex justify-content-between align-items-center">
-                                        <h4 class="header-title">Valores Financeiros</h4>
-                                        <div class="dropdown">
-                                            <a href="#" class="dropdown-toggle arrow-none card-drop p-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="mdi mdi-dots-vertical"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-end">
-                                                <a href="javascript:void(0);" class="dropdown-item">Refresh Report</a>
-                                                <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-
-                                    <div class="card-body pt-1">
-                                        <div class="d-flex align-items-center border border-light rounded p-2 mb-2">
-                                            <div class="flex-shrink-0 me-2">
-                                                <i class="mdi mdi-account-group widget-icon rounded-circle"></i>
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="fw-semibold my-0">Recebidos</h5>
-                                                <p class="mb-0">R$ 150.000,00</p>
-                                            </div>
-                                            <a href="javasript:void(0)" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Informações"><i class="mdi mdi-information-outline h4  my-0"></i></a>
-                                        </div>
-                                        
-                                        <div class="d-flex align-items-center border border-light rounded p-2 mb-2">
-                                            <div class="flex-shrink-0 me-2">
-                                                <i class="mdi mdi-progress-pencil widget-icon rounded-circle bg-warning-lighten text-warning"></i>
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="fw-semibold my-0">Em Progresso</h5>
-                                                <p class="mb-0">R$ 90.000,00</p>
-                                            </div>
-                                            <a href="javasript:void(0)" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Informações"><i class="mdi mdi-information-outline h4  my-0"></i></a>
-                                        </div>
-
-                                        <div class="d-flex align-items-center border border-light rounded p-2 mb-2">
-                                            <div class="flex-shrink-0 me-2">
-                                                <i class="mdi mdi-checkbox-marked-circle-outline widget-icon rounded-circle bg-danger-lighten text-danger"></i>
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="fw-semibold my-0">Programados</h5>
-                                                <p class="mb-0">R$ 50.000,00</p>
-                                            </div>
-                                            <a href="javasript:void(0)" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Informações"><i class="mdi mdi-information-outline h4  my-0"></i></a>
-                                        </div>
-
-                                        <div class="d-flex align-items-center border border-light rounded p-2">
-                                            <div class="flex-shrink-0 me-2">
-                                                <i class="mdi mdi-send widget-icon rounded-circle bg-success-lighten text-success"></i>
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="fw-semibold my-0">Cancelados</h5>
-                                                <p class="mb-0">20</p>
-                                            </div>
-                                            <a href="javasript:void(0)" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Informações"><i class="mdi mdi-information-outline h4  my-0"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                               
-                                
-                                <!-- Modal -->
-                                <div class="modal fade" id="editMetaModal" tabindex="-1" aria-labelledby="editMetaModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="editMetaModalLabel">Editar Meta Mensal</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="mb-3">
-                                                        <label for="selectMonth" class="form-label">Selecione o mês</label>
-                                                        <select class="form-select" id="selectMonth" aria-label="Selecionar mês">
-                                                            <option selected>Janeiro</option>
-                                                            <option value="1">Fevereiro</option>
-                                                            <option value="2">Março</option>
-                                                            <option value="3">Abril</option>
-                                                            <option value="3">Maio</option>
-                                                            <option value="3">Junho</option>
-                                                            <option value="3">Julho</option>
-                                                            <option value="3">Agosto</option>
-                                                            <option value="3">Setembro</option>
-                                                            <option value="3">Outubro</option>
-                                                            <option value="3">Novembro</option>
-                                                            <option value="3">Dezembro</option>
-
-                                                            <!-- Adicione outros meses aqui -->
-                                                        </select>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="metaValue" class="form-label">Valor da Meta (R$)</label>
-                                                        <input type="number" class="form-control" id="metaValue" placeholder="Digite o valor da meta">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                                <button type="button" class="btn btn-primary">Salvar mudanças</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                
                             </div>
                         </div>
+                        
+                        <script>
+                            function applyCnpjMask(input) {
+                                let value = input.value.replace(/\D/g, ''); // Remove tudo que não for número
+                                if (value.length > 2) value = value.replace(/^(\d{2})(\d)/, '$1.$2'); // Aplica o ponto após os 2 primeiros dígitos
+                                if (value.length > 5) value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3'); // Aplica o ponto após os 5 primeiros dígitos
+                                if (value.length > 8) value = value.replace(/^(\d{2})\.(\d{3})\.(\d{3})(\d)/, '$1.$2.$3/$4'); // Aplica a barra após os 8 dígitos
+                                if (value.length > 12) value = value.replace(/^(\d{2})\.(\d{3})\.(\d{3})\/(\d{4})(\d)/, '$1.$2.$3/$4-$5'); // Aplica o traço após os 12 dígitos
+                                input.value = value; // Atualiza o campo com o valor formatado
+                            }
+                        </script>
+                        
+                  
 
                       
-                        
+                      <br>
+    
+                      <!-- /.card-body -->
+                      <div class="card-footer" style="text-align: center;">
+                      
 
-                       
+                        <br>
+
+
+
+                        
+                                <div>
+                                    <strong style="text-align: center;">Copyright &copy; 2024 <a href="">Inova</a>.</strong>
+                                    Rastreio - Todos os Direitos <strong>Reservados.</strong> 
+                                </div>
+                             
+                                   
+                      </div>
+                  
+                </div></form>
+              </strong>
+                                              
+                                                 
+        
+                                                </div>
+
+                                            </div> <!-- end col-->
+
+                                          
+
+                                                    <!-- Preview -->
+                                                    <div class="dropzone-previews mt-3" id="file-previews"></div>
+
+                                                    <!-- file preview template -->
+                                                    <div class="d-none" id="uploadPreviewTemplate">
+                                                        <div class="card mt-1 mb-0 shadow-none border">
+                                                            <div class="p-2">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-auto">
+                                                                        <img data-dz-thumbnail src="#" class="avatar-sm rounded bg-light" alt="">
+                                                                    </div>
+                                                                    <div class="col ps-0">
+                                                                        <a href="javascript:void(0);" class="text-muted fw-bold" data-dz-name></a>
+                                                                        <p class="mb-0" data-dz-size></p>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <!-- Button -->
+                                                                        <a href="" class="btn btn-link btn-lg text-muted" data-dz-remove>
+                                                                            <i class="ri-close-line"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end file preview template -->
+                                                </div>
+
+                                                <!-- Date View -->
+                                                
+                                            </div> <!-- end col-->
+                                        </div>
+                                        <!-- end row -->
+
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+                        </div>
+                        <!-- end row-->
+                        
                     </div> <!-- container -->
+
                 </div> <!-- content -->
 
-                <!-- Footer Start -->
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <script>document.write(new Date().getFullYear())</script> 
-                            </div>
-                            <div class="col-md-6">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <!-- end Footer -->
+                
 
             </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
 
         <!-- Theme Settings -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="theme-settings-offcanvas">
@@ -1539,20 +1350,24 @@
             </div>
         </div>
 
-       <!-- Vendor js -->
-<script src="assets/js/vendor.min.js"></script>
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
 
-<!-- Select2 js  -->
-<script src="assets/vendor/select2/js/select2.min.js"></script>        
+        <!-- Bootstrap Datepicker Plugin js -->
+        <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 
-<!-- Apex Charts js -->
-<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+        <!-- Select2 js  -->
+        <script src="assets/vendor/select2/js/select2.min.js"></script>
 
-<!-- CRM Painel de Projetos Demo js -->
-<script src="assets/js/demo.crm-project.js"></script>
+        <!-- Dropzone File Upload js -->
+        <script src="assets/vendor/dropzone/min/dropzone.min.js"></script>
+        
 
-<!-- App js -->
-<script src="assets/js/app.min.js"></script>
+        <!-- init js -->
+        <script src="assets/js/ui/component.fileupload.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
 
     </body>
 </html>
